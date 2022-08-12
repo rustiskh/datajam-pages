@@ -1,0 +1,75 @@
+.long-form {
+    max-width: 1170px;
+    width: 100%;
+    padding: 60px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    &__content {
+        max-width: 600px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 33px;
+        color: #161516;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 29px;
+        color: #595866;
+        margin-top: 10px;
+    }
+
+    &__elements {
+        max-width: 282px;
+    }
+
+    &__input {
+        margin-right: 0px;
+        margin-bottom: 14px;
+    }
+
+    @include laptop {
+        padding: 60px 80px;
+
+        &__title {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 27px;
+        }
+    
+        &__text {
+            font-size: 13px;
+            line-height: 21px;
+        }
+    }
+
+    @include tablet {
+        padding: 30px 20px;
+        flex-direction: column;
+        max-width: 340px;
+        align-items: center;
+
+        &__content {
+            max-width: 270px;
+        }
+    
+        &__elements {
+            margin-top: 36px;
+
+            input {
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}

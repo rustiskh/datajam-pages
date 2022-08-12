@@ -1,0 +1,145 @@
+.recommend {
+	.title-second {
+		margin-top: 120px;
+		margin-bottom: 10px;
+	}
+
+	.subtitle {
+		margin-top: 10px;
+		max-width: 570px;
+	}
+
+	&-card-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 52px 30px;
+		margin-top: 45px;
+	}
+
+	.long-form {
+		margin-top: 30px;
+	}
+}
+
+@include tablet {
+	.recommend.container {
+		padding: 0px;
+	}
+
+	.recommend .title-second {
+		margin-top: 20px;
+	}
+
+	.subtitle {
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-bottom: 30px;
+	}
+
+	.video-reviews .title-second {
+		margin-left: 40px;
+		margin-top: 60px;
+	}
+
+	.long-form.tile {
+		margin: -80px auto 0 auto;
+	}
+}
+
+.recommend-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	width: 270px;
+	height: 300px;
+	padding: 38px 30px;
+
+	position: relative;
+
+	&__avatar {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 88px;
+		height: 88px;
+		background: #ffffff;
+		border-radius: 24px;
+		box-shadow: 0px 15px 30px rgba(198, 197, 210, 0.15), 0px 12px 20px rgba(198, 197, 210, 0.25), 0px 4px 5px rgba(198, 197, 210, 0.45);
+		margin-top: -60px;
+	}
+
+	&__title {
+		margin-top: 20px;
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 33px;
+		color: #161516;
+	}
+
+	&__text {
+		margin-top: 20px;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 29px;
+		color: #595866;
+	}
+
+	&__number {
+		position: absolute;
+		bottom: 10px;
+		left: 20px;
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 29px;
+		letter-spacing: 0.5em;
+		color: #74c733;
+		display: none;
+	}
+
+	@include tablet {
+		width: 240px;
+		height: 240px;
+		padding: 10px 20px;
+
+		&__avatar {
+			width: 74px;
+			height: 74px;
+			border-radius: 16px;
+			margin-top: -32px;
+		}
+
+		&__title {
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 27px;
+		}
+
+		&__text {
+			font-size: 13px;
+			line-height: 21px;
+		}
+
+		&__number {
+			display: block;
+			font-weight: 700;
+			font-size: 15px;
+			line-height: 29px;
+			letter-spacing: 0.5em;
+			color: #74c733;
+		}
+	}
+}
+
+// Стили слайдера
+.recommend-card-wrapper .slick-list {
+	width: 100%;
+	height: 382px;
+}
+
+.recommend-card-wrapper .slick-slide {
+	display: flex;
+	margin-left: 30px;
+	margin-top: 24px;
+}

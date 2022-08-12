@@ -1,0 +1,77 @@
+.main {
+	position: relative;
+	padding: 80px 90px;
+
+	@include tablet {
+		padding: 100px 40px 120px 40px;
+	}
+
+	&__content {
+		max-width: 723px;
+	}
+
+	&__header {
+		margin-bottom: 22px;
+	}
+
+	&__list {
+		margin-bottom: 22px;
+
+		.list-item {
+			display: flex;
+			margin-bottom: 14px;
+
+			&__icon {
+				margin-right: 15px;
+			}
+
+			&__text {
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 26px;
+				letter-spacing: 0.04em;
+				color: #343439;
+
+				@include tablet {
+					width: 124px;
+					font-size: 15px;
+					line-height: 18px;
+					color: #343439;
+				}
+			}
+		}
+	}
+
+	&__img {
+		position: absolute;
+		bottom: 20px;
+		right: 90px;
+		max-width: 530px;
+
+		@media (max-width: 1150px) {
+			max-width: 450px;
+			top: 150px;
+			bottom: 0;
+		}
+
+		@media (max-width: 890px) {
+			max-width: 370px;
+			top: 176px;
+			right: 24px;
+		}
+
+		@include tablet {
+			max-width: 234px;
+			top: 217px;
+		}
+
+		@include mobile {
+			position: relative;
+			display: block;
+			top: auto;
+			right: auto;
+			bottom: auto;
+			margin: 20px auto;
+		}
+	}
+}

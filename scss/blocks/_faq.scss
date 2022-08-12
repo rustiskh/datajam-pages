@@ -1,0 +1,135 @@
+.faq.container {
+    margin-top: 96px;
+}
+
+.faq {
+  
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .content__column {
+        display: flex;
+        flex-direction: column;
+        max-width: 570px;
+        width: 100%;
+    }
+  
+    &__title {
+      margin-bottom: 24px;
+      font-weight: 700;
+      font-size: 31px;
+      line-height: 43px;
+      color: #161516;
+    }
+  
+    .tile {
+      &:hover {
+        box-shadow: 0px 2px 6px rgba(198, 197, 210, 0.75);
+        svg {
+          circle {
+            fill: #74c733;
+          }
+          rect {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+  
+    &-card {
+        max-width: 570px;
+        margin-bottom: 30px;
+        padding: 27px 36px 27px 36px;
+        border: none;
+        cursor: pointer;
+  
+      &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        .title {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 29px;
+          color: #343439;
+              text-align: left;
+        }
+      }
+  
+      &__text {
+          margin-top: 10px;
+          padding: 20px 30px 30px;
+          max-width: 498px;
+          border: 1px solid #74c733;
+          border-radius: 0px 16px 16px 16px;
+          display: none;
+          text-align: left;
+          
+          p {
+              font-weight: 300;
+              font-size: 15px;
+              line-height: 29px;
+              color: #595866;
+          }
+          
+      }
+  
+      &--active &__text {
+        display: block;
+      }
+  
+      &--active .icon .vertical {
+        display: none;
+      }
+    }
+  }
+  
+  @media (max-width: 1290px) {
+    .faq {
+      margin-top: 120px;
+    
+      &__content {
+      display: block;
+      }
+    
+      .content__column {
+        margin: 0 auto;
+      }
+    
+      &__title {
+        font-size: 26px;
+        line-height: 35px;
+      }
+    
+      &-card {
+        margin-bottom: 14px;
+        padding: 24px 20px;
+    
+        &__header {
+    
+          .title {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 21px;
+            color: #595866;
+          }
+        }
+    
+        &__text {
+        padding: 14px;
+        border-radius: 0px 14px 14px 14px;
+        
+          p {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 21px;
+          }
+        
+        }
+      }
+    }
+  }
