@@ -1,9 +1,10 @@
 .button {
+  display: block;
   border-radius: 14px;
   border: none;
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, from(#74C733), to(#57A41B));
-  background: linear-gradient(180deg, #74C733 0%, #57A41B 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#74c733), to(#57a41b));
+  background: linear-gradient(180deg, #74c733 0%, #57a41b 100%);
   text-decoration: none;
   -webkit-box-shadow: 0px 45px 72px rgba(116, 199, 51, 0.15), 0px 25px 40px rgba(116, 199, 51, 0.25), 0px 5px 15px rgba(116, 199, 51, 0.45);
           box-shadow: 0px 45px 72px rgba(116, 199, 51, 0.15), 0px 25px 40px rgba(116, 199, 51, 0.25), 0px 5px 15px rgba(116, 199, 51, 0.45);
@@ -11,8 +12,9 @@
   font-size: 13px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
+  text-align: center;
 }
 
 .button:hover {
@@ -32,7 +34,7 @@
           justify-content: center;
   height: 48px;
   width: 48px;
-  border: 1px solid #74C733;
+  border: 1px solid #74c733;
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -47,7 +49,7 @@
 
 .button_ghost {
   padding: 14px 30px;
-  border: 1px solid #74C733;
+  border: 1px solid #74c733;
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -106,11 +108,11 @@
 }
 
 .button_circle:hover {
-  background-color: #74C733;
+  background-color: #74c733;
 }
 
 .button_circle:hover svg path {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .button_circle svg {
@@ -134,8 +136,8 @@
 .form-input {
   width: 270px;
   height: 60px;
-  background: #FFFFFF;
-  border: 1px solid #88879B;
+  background: #ffffff;
+  border: 1px solid #88879b;
   border-radius: 14px;
   margin-right: 10px;
   font-weight: 500;
